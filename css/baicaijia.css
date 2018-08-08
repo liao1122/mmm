@@ -1,0 +1,280 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+header {
+  overflow: hidden;
+  color: #fff;
+  font-size: 18px;
+  height: 50px;
+  background-color: #f4483e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .lian {
+  padding-left: 10px;
+}
+
+header .xia {
+  height: 36px;
+  width: 36px;
+  margin-right: 10px;
+}
+
+header .xia img {
+  height: 100%;
+  width: 100%;
+  background-size: 100% 100%;
+}
+
+#top {
+  border-bottom: 5px solid #f7f7f7;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+#top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+#top ul li {
+  height: 40px;
+  line-height: 40px;
+}
+
+#top ul li a {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+#top ul li a:hover,
+#top ul li a:focus {
+  border-bottom: 1px solid red;
+  color: red;
+}
+
+.goods .goods-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  padding: 10px 5px;
+  border-bottom: 5px solid #f7f7f7;
+}
+
+.goods .goods-top .goods-img {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.goods .goods-top .goods-img a {
+  width: 100%;
+}
+
+.goods .goods-top .goods-img a img {
+  max-width: 100%;
+}
+
+.goods .goods-top .xiadan {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding: 0 10px;
+}
+
+.goods .goods-top .xiadan p {
+  margin-bottom: 0px;
+}
+
+.goods .goods-top .xiadan p .da {
+  font-size: 20px;
+}
+
+.goods .goods-top .xiadan p .da del {
+  font-size: 10px;
+}
+
+.goods .goods-top .xiadan i {
+  color: red;
+  font-size: 14px;
+  padding-right: 5px;
+}
+
+.goods .goods-top .xiadan em {
+  color: red;
+  font-size: 6px;
+}
+
+.goods .goods-top .xiadan del {
+  padding-left: 10px;
+  color: #666;
+}
+
+.goods .goods-top .xiadan .bar i {
+  display: inline-block;
+  line-height: 15px;
+  height: 15px;
+  width: 100px;
+  color: #fff;
+  background-color: #ffb7b7;
+  border: 1px solid red;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.goods .goods-top .xiadan .bar i em {
+  height: 100%;
+  background-color: red;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+}
+
+.goods .goods-top .xiadan .bar i span {
+  position: absolute;
+}
+
+.goods .goods-top .xiadan .bar b {
+  color: red;
+  font-size: 8px;
+}
+
+.goods .goods-top .xiadan .quan {
+  font-size: 10px;
+  padding: 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.goods .goods-top .xiadan .quan a:nth-child(1) {
+  border: 1px dashed #e4393c;
+  color: #e4393c;
+  height: 24px;
+  line-height: 24px;
+}
+
+.goods .goods-top .xiadan .quan a:last-child {
+  background-color: #ff5e5d;
+  color: #fff;
+  border-radius: 5px;
+  height: 24px;
+  line-height: 24px;
+}
+
+/* footer部分开始 */
+footer {
+  background-color: #EFEFEF;
+  overflow: hidden;
+}
+
+footer .foot_func {
+  margin-top: 10px;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: 1px solid #C4C4C4;
+}
+
+footer .foot_func a {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .foot_func .login {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .foot_func .signin {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-left: 1px solid #C4C4C4;
+  border-right: 1px solid #C4C4C4;
+}
+
+footer .foot_func .back_top {
+  -webkit-box-flex: 1.5;
+      -ms-flex: 1.5;
+          flex: 1.5;
+}
+
+footer .foot_func .back_top a .icon_back_top {
+  font-family: "iconfont" !important;
+  font-size: 14px;
+  font-style: bold;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+footer .copyright {
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+footer .copyright p a {
+  font-size: 12px;
+  color: #FF0000;
+}
+
+/* 固定下载连接部分开始 */
+.market {
+  position: fixed;
+  right: 2px;
+  bottom: 60px;
+  z-index: 1;
+}
+
+.market a img {
+  width: 64px;
+}
+/*# sourceMappingURL=baicaijia.css.map */

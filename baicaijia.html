@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>白菜价</title>
+  <link rel="stylesheet" href="./lib/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/baicaijia.css">
+</head>
+<body>
+  <div class="view">
+    <!-- 头部 -->
+    <header id="backTop">
+      <a class="lian" href="./index.html">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      白菜价-淘宝内部券
+      <a class="xia" href="javascript:;">
+        <img src="./images/download.png" alt="">
+      </a>
+    </header>
+    <!-- 头部导航 -->
+    <div id="top">
+      <ul class="clearfix">
+
+      </ul>
+    </div>
+    <!-- 商品详情 -->
+    <div class="goods clearfix">
+      <!-- 占位专用 -->
+
+    </div>
+    <!-- 底部 -->
+    <footer>
+      <div class="foot_func">
+        <div class="login">
+          <a href="login.html">登录</a>
+        </div>
+        <div class="signin">
+          <a href="register.html">注册</a>
+        </div>
+        <div class="back_top">
+          <a href="#backTop">
+            <i class="icon_back_top"></i>返回顶部
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          <a href="http://m.manmanbuy.com/app.html?type=headword&amp;value=wap">手机APP下载</a>慢慢买手机版 -- 掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+      </div>
+    </footer>
+    <!-- 定位小图片 -->
+    <div class="market">
+      <a href="http://m.manmanbuy.com/app.html?type=headword&amp;value=wap">
+        <img src="./images/market.png" alt="">
+      </a>
+    </div>
+  </div>
+</body>
+<script src="./js/jquery-1.12.2.js"></script>
+<script src="./js/template-web.js"></script>
+<script src="./js/getTop.js"></script>
+</html> 
+
+<!-- 导航 -->
+<script type="text/template" id="daoHan">
+  {{ each data value index }}
+    <li>
+      <a class="col-lg-2 col-md-2 col-sm-2 col-xs-2" href="#" data-id="{{value.titleId}}">{{ value.title}}</a>
+    </li>
+  {{ /each }}
+</script>
+
+<script type="text/template" id="goodsTmp">
+  {{ each res value index}}
+    <div class="goods-top ">
+      <div class="goods-img">
+        <a href="javascript:;">
+          {{@value.productImg}}
+        </a>
+      </div>
+      <div class="xiadan">
+      {{@value.productName}}
+        <p>
+          <span style="color:red" class="da">{{@value.productPrice}}</span>
+          {{@value.productCouponRemain}}
+        </p>
+        <p class="quan">
+          <a href="javascript:;">点此领10元优惠券</a>
+          {{@value.productHref}}
+        </p>
+      </div>
+    </div>
+  {{/each}}
+</script>
+
+
